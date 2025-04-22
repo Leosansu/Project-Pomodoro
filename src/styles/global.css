@@ -1,0 +1,17 @@
+body {
+    font-family: "Playwrite AU SA", cursive;
+    font-size: 26px;
+    background-color: #121212;
+    /* Cor escura para o fundo */
+
+}
+
+h1 {
+    color: var(--primaria);
+    font-size: 35px;
+}
+p {
+    color: var(--violeta);
+    font-size: 20px;
+    font-family: var(--fonte);
+}
