@@ -11,7 +11,9 @@ export function App() {
     // jsx só pode ter um elemento pai
 
     <>
-      <Heading/>
+      <Heading attr={123} attr2='String'>
+         Olá mundo 1
+       </Heading>
       <p >
         Esse é o meu primeiro projeto com ReactJS
       </p>
