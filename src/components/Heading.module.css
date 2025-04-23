@@ -1,8 +1,16 @@
 .heading {
-    background: purple;
-    color: black;
-  }
-  
-  .cyan {
-    color: cyan;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+button {
+  padding: 0rem 1rem; /* Aumenta o tamanho interno do botão */
+  font-size: 1.6rem; /* Aumenta o tamanho do texto */
+  border-radius: 0.8rem; /* (Opcional) Adiciona bordas arredondadas */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+button:hover {
+  transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+  background-color: var(--text-muted); /* Muda a cor de fundo ao passar o mouse */
+}

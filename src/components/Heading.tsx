@@ -2,9 +2,7 @@
 import stilo from './Heading.module.css'
 
 type HeadingProps = {
-  children: string;
-  attr?: number;
-  attr2?: string;
+  children: React.ReactNode; //React.ReactNode é tudo que o react aceita como tipo
 }
 export function Heading({ children }: HeadingProps) {
   return <h1 className={stilo.heading}>{children}</h1>

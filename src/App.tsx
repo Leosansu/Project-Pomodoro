@@ -1,21 +1,26 @@
 
 import { Heading } from './components/Heading';
+import { FloppyDisk } from 'phosphor-react';
 
 import './styles/tema.css';
 import './styles/global.css';
+
 
 // componente do react é uma função que utiliza o nome em pascal case
 //ex: AppCeasa
 export function App() {
   return (
     // jsx só pode ter um elemento pai
-
+// No site lucide.dev tem uma lista de icones para usar nos botões(FloppyDisk)
     <>
-      <Heading attr={123} attr2='String'>
-         Olá mundo 1
-       </Heading>
+      <Heading >
+        Olá mundo 1
+        <button>          
+        <FloppyDisk /> 
+        </button>
+      </Heading>
       <p >
-      "Crescer é aprender a deixar ir — pessoas, momentos, expectativas — e mesmo assim manter o coração inteiro."
+        A vida é feita de encontros — alguns nos mudam, outros nos completam.
       </p>
     </>
   );
