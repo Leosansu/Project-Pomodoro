@@ -15,7 +15,7 @@ export function App() {
          Olá mundo 1
        </Heading>
       <p >
-        Esse é o meu primeiro projeto com ReactJS
+      "Crescer é aprender a deixar ir — pessoas, momentos, expectativas — e mesmo assim manter o coração inteiro."
       </p>
     </>
   );
