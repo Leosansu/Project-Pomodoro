@@ -4,6 +4,7 @@ import { FloppyDisk } from 'phosphor-react';
 
 import './styles/tema.css';
 import './styles/global.css';
+import { ContainerFluid } from './components/ContainerFluid';
 
 
 // componente do react é uma função que utiliza o nome em pascal case
@@ -11,34 +12,19 @@ import './styles/global.css';
 export function App() {
   return (
     // jsx só pode ter um elemento pai
-// No site lucide.dev tem uma lista de icones para usar nos botões(FloppyDisk)
+    // No site lucide.dev tem uma lista de icones para usar nos botões(FloppyDisk)
     <>
-      <div className="container">
-        <div className="content">
-          <section>
-          A verdadeira força, se revela em levantar da cama num dia difícil, em tentar de novo depois de uma queda em certos momentos , sempre tentar mesmo quando ninguém mais acredita. 
+
+      <ContainerFluid >
+        <Heading>
+          Meu Título
+        </Heading>
+        <section>A verdadeira força, se revela em levantar da cama num dia difícil, em tentar de novo depois de uma queda em certos momentos, sempre tentar mesmo quando ninguém mais acredita.
           Continuar, mesmo sem aplausos ou certezas, é um ato de resistência poderosa. E é nessa persistência silenciosa que a verdadeira transformação acontece.
-          </section>
-        </div>
-      </div>
-      <div className="container-fluid">
-        <div className="content">
-          <section>
-          A verdadeira força, se revela em levantar da cama num dia difícil, em tentar de novo depois de uma queda em certos momentos, sempre tentar mesmo quando ninguém mais acredita. 
-          Continuar, mesmo sem aplausos ou certezas, é um ato de resistência poderosa. E é nessa persistência silenciosa que a verdadeira transformação acontece.
-          </section>
-        </div>
-      </div>
-      <div className="container-fluid">
-      <div className="container">
-        <div className="content">
-          <section>
-          A verdadeira força, se revela em levantar da cama num dia difícil, em tentar de novo depois de uma queda em certos momentos, sempre tentar mesmo quando ninguém mais acredita. 
-          Continuar, mesmo sem aplausos ou certezas, é um ato de resistência poderosa. E é nessa persistência silenciosa que a verdadeira transformação acontece.
-          </section>
-        </div>
-        </div>
-      </div>
+        </section>
+
+      </ContainerFluid>
+
     </>
   );
 

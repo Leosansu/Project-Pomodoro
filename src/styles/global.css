@@ -16,18 +16,5 @@
     color: var(--text-default);
   }
 
-  .container-fluid {
-    background-color: burlywood;
 
-  }    
-  .container {
-    max-width: 68rem;
-    background-color: blueviolet;  
-    margin: 0 auto;
-    
-  }
-  .content {
-    background-color: orange;
-    margin: 3.2rem ;
-  }
   
