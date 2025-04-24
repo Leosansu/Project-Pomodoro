@@ -7,21 +7,38 @@ import './styles/global.css';
 
 
 // componente do react é uma função que utiliza o nome em pascal case
-//ex: AppCeasa
+
 export function App() {
   return (
     // jsx só pode ter um elemento pai
 // No site lucide.dev tem uma lista de icones para usar nos botões(FloppyDisk)
     <>
-      <Heading >
-        Olá mundo 1
-        <button>          
-        <FloppyDisk /> 
-        </button>
-      </Heading>
-      <p >
-        A vida é feita de encontros — alguns nos mudam, outros nos completam.
-      </p>
+      <div className="container">
+        <div className="content">
+          <section>
+          A verdadeira força, se revela em levantar da cama num dia difícil, em tentar de novo depois de uma queda em certos momentos , sempre tentar mesmo quando ninguém mais acredita. 
+          Continuar, mesmo sem aplausos ou certezas, é um ato de resistência poderosa. E é nessa persistência silenciosa que a verdadeira transformação acontece.
+          </section>
+        </div>
+      </div>
+      <div className="container-fluid">
+        <div className="content">
+          <section>
+          A verdadeira força, se revela em levantar da cama num dia difícil, em tentar de novo depois de uma queda em certos momentos, sempre tentar mesmo quando ninguém mais acredita. 
+          Continuar, mesmo sem aplausos ou certezas, é um ato de resistência poderosa. E é nessa persistência silenciosa que a verdadeira transformação acontece.
+          </section>
+        </div>
+      </div>
+      <div className="container-fluid">
+      <div className="container">
+        <div className="content">
+          <section>
+          A verdadeira força, se revela em levantar da cama num dia difícil, em tentar de novo depois de uma queda em certos momentos, sempre tentar mesmo quando ninguém mais acredita. 
+          Continuar, mesmo sem aplausos ou certezas, é um ato de resistência poderosa. E é nessa persistência silenciosa que a verdadeira transformação acontece.
+          </section>
+        </div>
+        </div>
+      </div>
     </>
   );
 
