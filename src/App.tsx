@@ -1,10 +1,10 @@
 
-import { Heading } from './components/Heading';
-import { FloppyDisk } from 'phosphor-react';
 
 import './styles/tema.css';
 import './styles/global.css';
-import { ContainerFluid } from './components/ContainerFluid';
+
+import { Heading } from './components/Heading';
+import { ContainerFluid } from './components/Container';
 
 
 // componente do react é uma função que utiliza o nome em pascal case
