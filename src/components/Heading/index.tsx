@@ -1,4 +1,3 @@
-
 import stilo from './Heading.module.css'
 
 type HeadingProps = {
