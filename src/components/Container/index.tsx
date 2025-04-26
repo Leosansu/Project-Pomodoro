@@ -1,4 +1,4 @@
-import styles from './ContainerFluid.module.css';
+import styles from './styles.module.css';
 
 
 type ContainerFluidProps = {

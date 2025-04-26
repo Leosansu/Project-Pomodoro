@@ -1,4 +1,4 @@
-import stilo from './Heading.module.css'
+import stilo from './styles.module.css'
 
 type HeadingProps = {
   children: React.ReactNode; //React.ReactNode é tudo que o react aceita como tipo
