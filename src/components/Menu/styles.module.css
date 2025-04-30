@@ -1,4 +1,4 @@
-.logo {
+.menu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,30 +6,31 @@
   margin-top:   2rem; 
   
 }
-.logoLink {
+.menuLink {
   background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.1rem;
-  font-size: 2.2rem;
+  font-size: 1.0rem;
   text-decoration: none;
   color: var(--primary);
   border-radius: 0.8rem;
   transition: all 0.2s ease-in-out;
 }
-.logoLink:hover {
-  filter: brightness(80%);
+.menuLink:hover {
+  filter: brightness(70%);
  
 
 }
-.logoLink:active {
+.menuLink:active {
   transform: scale(0.93);
   transition: 0.01s ease-in-out;
   
 }
-.logoLink svg {
-  width: 3rem;
-  height: 3rem;
+.menuLink svg {
+  
+  width: 2.4rem;
+  height: 2.4rem;
 }

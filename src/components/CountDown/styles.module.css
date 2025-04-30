@@ -1,0 +1,6 @@
+.countainer {
+  font-size: clamp(3.5rem, 25vw, 13rem); /*tamanho da fonte se altera conforme a tela*/
+  font-weight: bold; /*negrito*/
+  text-align: center;
+  line-height: 1.2; /*altura da linha*/
+}
