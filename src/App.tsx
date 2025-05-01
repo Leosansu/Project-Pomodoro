@@ -6,6 +6,7 @@ import { ContainerFluid } from './components/Container';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
+import { Input } from './components/Input';
 
 
 
@@ -37,8 +38,7 @@ export function App() {
       <ContainerFluid>
         <form className='form' action="">
           <div className='formRow'>
-            <label htmlFor='meuInput'>tarefa</label>
-            <input id='meuInput' type='text' />
+          <Input id="input-id" />
 
           </div>
 
@@ -55,7 +55,10 @@ export function App() {
           <div className='formRow'>
             <button>Enviar</button>
           </div>
+         
         </form>
+        
+        
       </ContainerFluid>
 
     </>
