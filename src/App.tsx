@@ -10,7 +10,7 @@ import { Input } from './components/Input';
 import { Ciclos } from './components/Ciclos';
 import { BotaoPadrao } from './components/BotaoPadrao';
 import { CirclePlay } from 'lucide-react';
-
+import { Footer } from './components/Footer';
 
 
 // componente do react é uma função que utiliza o nome em pascal case
@@ -62,6 +62,9 @@ export function App() {
           </div>
 
         </form>
+      </ContainerFluid>
+      <ContainerFluid>
+        <Footer/>
       </ContainerFluid>
 
     </>
