@@ -1,8 +1,13 @@
-.heading {
+.Input {
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 0.2rem solid var(--primary);
   gap: 2.4rem;
+  padding: .4rem;
+  border-radius: .4rem;
+  color: var(--primary-light);
 }
 button {
   padding: 0rem 1rem; /* Aumenta o tamanho interno do botão */

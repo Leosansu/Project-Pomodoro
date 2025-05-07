@@ -7,6 +7,9 @@ import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
 import { Input } from './components/Input';
+import { Ciclos } from './components/Ciclos';
+import { BotaoPadrao } from './components/BotaoPadrao';
+import { CirclePlay } from 'lucide-react';
 
 
 
@@ -23,7 +26,6 @@ export function App() {
         <section>A verdadeira força, se revela em levantar da cama num dia difícil, em tentar de novo depois de uma queda em certos momentos, se reerguer mesmo que ninguém mais acredite.
           Continuar, ainda que sem aplausos ou certezas, é um ato de resistência poderosa. E é nessa persistência silenciosa que a verdadeira transformação acontece.
         </section>
-
       </ContainerFluid>
 
 
@@ -35,30 +37,31 @@ export function App() {
         <CountDown />
       </ContainerFluid>
 
+
       <ContainerFluid>
         <form className='form' action="">
           <div className='formRow'>
-          <Input id="input-id" />
-
+            <Input id="input-id"
+              msgLabel="lembrete"
+              placeholder='Digite'
+            />
           </div>
 
           <div className='formRow'>
-
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
 
           <div className='formRow'>
-            <p>Ciclos</p>
-            <p>0 0 0 0 0 0 0</p>
+            <Ciclos />
           </div>
 
           <div className='formRow'>
-            <button>Enviar</button>
+            <button>Enviar</button>          
+          <BotaoPadrao icon = {<CirclePlay />} cor='verde' />   
+          <BotaoPadrao icon = {<CirclePlay />} cor='vermelho' />     
           </div>
-         
+
         </form>
-        
-        
       </ContainerFluid>
 
     </>

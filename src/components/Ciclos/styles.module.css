@@ -1,0 +1,28 @@
+.ciclos{
+    display: center;
+    gap: 0.8rem;
+
+    
+}
+.pontosDoClico{
+    display: flex;
+    gap: 0.8rem;
+        
+}
+.pontoDoClico{
+    
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+.tempoDeTrabalho{
+    background: var(--warning); 
+
+}
+.curtoIntervalo{
+    background: var(--success); 
+}
+.longoIntervalo{
+    background: var(--info-breack); 
+}
