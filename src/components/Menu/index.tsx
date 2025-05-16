@@ -1,29 +1,42 @@
-import { History,SunMoon,Settings,House } from 'lucide-react'
+import { History, SunMoon, Settings, House, Moon, Sun } from 'lucide-react'
 import stilo from './styles.module.css'
 import { useEffect, useState } from 'react'
 
 /*type logoProps = {
   children: React.ReactNode; //React.ReactNode é tudo que o react aceita como tipo
 }*/
-type temasDisponiveis = 'diurno' | 'noturno' //definindo os tipos de temas disponíveis
+// type temasDisponiveis = 'diurno' | 'noturno' 
+
+// export function Menu() {
+//   const[tema, setTema] = useState<temasDisponiveis >('noturno')
+
+type temasDisponiveis = 'diurno' | 'noturno';
 
 export function Menu() {
-  const[tema, setTema] = useState<temasDisponiveis >('noturno')
+  const [tema, setTema] = useState<temasDisponiveis>(() => {
+    // Busca o tema salvo no localStorage ou usa 'noturno' como padrão
+    return (localStorage.getItem('tema') as temasDisponiveis) || 'noturno';
+  });
+  
+  const iconeAlteraTema = {
+    diurno: <Moon />,
+    noturno: <Sun />, 
+  };
 
   function alternarTema( evento:React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
-    evento.preventDefault() // Previne que o navegador siga o link definido no atributo href="#
-    setTema(tema === 'noturno' ? 'diurno' : 'noturno'); // Alterna o tema
-    console.log('Clicado no darkButton:', tema)
+    evento.preventDefault() 
+    setTema(tema === 'noturno' ? 'diurno' : 'noturno'); 
+    
   }
   useEffect(() => {    
     document.documentElement.setAttribute('data-theme', tema);//
+    localStorage.setItem('tema', tema) 
 
-  },[tema]) //Só executa quando o valor de tema mudar
+  },[tema]) 
 
+  
 
   return <nav className={stilo.menu}>
-
-    <h1>{tema}</h1>
     
 
     <a className={stilo.menuLink} href='#'
@@ -52,7 +65,7 @@ export function Menu() {
       title='Tema noturno/diurno'
       aria-label='Alterar tema'
       onClick={alternarTema}>
-      <SunMoon />
+      {iconeAlteraTema[tema]}
       
     </a>
   </nav>
