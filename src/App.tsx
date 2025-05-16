@@ -15,19 +15,18 @@ import { Footer } from './components/Footer';
 
 // componente do react é uma função que utiliza o nome em pascal case
 
-export function App() {
+export function App() {  
+
+  
+
   return (
-    // jsx só pode ter um elemento pai
-    // No site lucide.dev tem uma lista de icones para usar nos botões(FloppyDisk)
-    <>
+    <>     
+      
 
-      <ContainerFluid >
+      <ContainerFluid>
         <Logo />
-        <section>A verdadeira força, se revela em levantar da cama num dia difícil, em tentar de novo depois de uma queda em certos momentos, se reerguer mesmo que ninguém mais acredite.
-          Continuar, ainda que sem aplausos ou certezas, é um ato de resistência poderosa. E é nessa persistência silenciosa que a verdadeira transformação acontece.
-        </section>
+       
       </ContainerFluid>
-
 
       <ContainerFluid>
         <Menu />
@@ -37,14 +36,10 @@ export function App() {
         <CountDown />
       </ContainerFluid>
 
-
       <ContainerFluid>
         <form className='form' action="">
           <div className='formRow'>
-            <Input id="input-id"
-              msgLabel="lembrete"
-              placeholder='Digite'
-            />
+            <Input id="input-id" msgLabel="lembrete" placeholder='Digite' />
           </div>
 
           <div className='formRow'>
@@ -56,18 +51,16 @@ export function App() {
           </div>
 
           <div className='formRow'>
-            <button>Enviar</button>          
-          <BotaoPadrao icon = {<CirclePlay />} cor='verde' />   
-          <BotaoPadrao icon = {<CirclePlay />} cor='vermelho' />     
+            <button>Enviar</button>
+            <BotaoPadrao icon={<CirclePlay />} cor='verde' />
+            
           </div>
-
         </form>
       </ContainerFluid>
-      <ContainerFluid>
-        <Footer/>
-      </ContainerFluid>
 
+      <ContainerFluid>
+        <Footer />
+      </ContainerFluid>
     </>
   );
-
 }
