@@ -1,4 +1,4 @@
-import { History, SunMoon, Settings, House, Moon, Sun } from 'lucide-react'
+import { History, Settings, House, Moon, Sun } from 'lucide-react'
 import stilo from './styles.module.css'
 import { useEffect, useState } from 'react'
 
