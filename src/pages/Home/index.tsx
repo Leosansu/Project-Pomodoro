@@ -1,5 +1,5 @@
-import './styles/tema.css';
-import './styles/global.css';
+import '../../styles/tema.css';
+import '../../styles/global.css';
 
 import { ContainerFluid } from '../../components/Container';
 import { MainTemplate } from '../../Templates/MainTemplates';
